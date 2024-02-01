@@ -1,10 +1,9 @@
 #ifndef geometry_HPP
 #define geometry_HPP
-#include <vector>
-#include <stack>
 #include <fstream>
 #include <iostream>
-
+#include <vector>
+#include <stack>
 const int MAX = 60;
 
 struct geoObject

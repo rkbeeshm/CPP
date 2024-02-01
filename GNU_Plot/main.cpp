@@ -4,7 +4,7 @@
 // Using typedef to create a type alias for a function pointer
 typedef void(*DrawFunc) (struct geoObject);
 
-// Array of function pointer
+// Array of function pointer1
 DrawFunc DrawArray[] = {drawCir, drawElli, drawRec, drawSqu, drawTri};
 
 // Other possible way to define AreaFunc would be using AreaFunc = void(*)(struct geoObject):
@@ -14,7 +14,7 @@ int main(){
     
     struct geoObject go;
     int i;
-    std::cout<<"To find area of different 2D shapes\n"<<std::endl;
+    std::cout<<"Draw different 2D shapes\n"<<std::endl;
     std::cout<<"1.Circle\n2.Ellipse\n3.Rectangle\n4.Square\n5.Triangle\n"<<std::endl;
     std::cin>>i;
     
