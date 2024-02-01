@@ -7,7 +7,7 @@ void drawCir(struct geoObject go) {
     for (int n = 0; n <= MAX; n++ ){
         x.push_back(go.circle.r*cos(n));
         y.push_back(go.circle.r*sin(n));
-        dataFile << x[n] << " " << y[n] << "\n";
+        dataFile << x[n] << " " << y[n] <<std::endl;
     }
     dataFile.close();
 }

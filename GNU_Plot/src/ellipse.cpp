@@ -7,7 +7,7 @@ void drawElli(struct geoObject go) {
     for (int n = 0; n <= MAX; n++ ){
         x.push_back(go.ellipse.a*cos(n));
         y.push_back(go.ellipse.b*sin(n));
-        dataFile << x[n] << " " << y[n] << "\n";
+        dataFile << x[n] << " " << y[n] <<std::endl;
     }
     dataFile.close();
 }

@@ -6,7 +6,9 @@ void drawTri(struct geoObject go) {
     for (int n = 0; n < MAX; ++n) {
         x.push_back(n * go.triangle.b / (MAX - 1));
         y.push_back(( go.triangle.h / go.triangle.b) * x[n]);
-        dataFile << x[n] << " " << y[n] << "\n";
+        dataFile << x[n] << " " << y[n] <<std::endl;
     }
+    dataFile << go.triangle.b << " " << 0 <<std::endl;
+    dataFile << 0 << " " << 0 <<std::endl;
     dataFile.close();
 }
