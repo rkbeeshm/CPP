@@ -5,7 +5,7 @@ void drawSqu(struct geoObject go) {
 
     dataFilePath /= "data/square_coordinate.dat"; // Append file path with data file name
 
-    std::ofstream dataFile(dataFilePath);
+    std::ofstream dataFile(dataFilePath.c_str());
     std::stack<float> x, y;
     for (int i = 0; i < MAX; ++i) {
         for (int j = 0; j < MAX; ++j) {
@@ -22,7 +22,7 @@ void drawSqu(struct geoObject go) {
 
     scriptFilePath /= "data/square_script.gnu"; // Append file path with script file name
 
-    std::ofstream scriptFile(scriptFilePath);
+    std::ofstream scriptFile(scriptFilePath.c_str());
     scriptFile << "plot " << dataFilePath <<std::endl;
     scriptFile.close();
 

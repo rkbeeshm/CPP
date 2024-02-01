@@ -22,5 +22,6 @@ void drawCir(struct geoObject go) {
     scriptFile.close();
 
     std::string command = "gnuplot -p " + scriptFilePath.string(); // Script to run gnuplot with file path
+    std::cout<<command.c_str();
     system(command.c_str()); // Execute the command
 }
